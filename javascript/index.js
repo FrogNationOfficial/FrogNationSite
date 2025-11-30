@@ -1,3 +1,12 @@
+
+document.getElementById("aboutDiv").hidden = true
+
+
 document.getElementById("aboutButton").onclick = function () {
-    console.log("Abouted")
+    if (document.getElementById("aboutDiv").hidden == true) {
+        console.log("Abouted")
+        document.getElementById("aboutDiv").hidden = false
+    } else {
+        document.getElementById("aboutDiv").hidden = true
+    }
 }
